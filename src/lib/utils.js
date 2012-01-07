@@ -9,3 +9,15 @@ function xh_request(method, host, uri, params)
 	GM_xmlhttpRequest(options);
 
 }
+
+function getConfigParameter(key, defaultValue) {
+	var value = localStorage[key] || def;
+	if (value == undefined) {
+		throw "undefined value";
+	}
+	return value;
+}
+
+function setConfigParameter(key, value) {
+	localStorage[key]=value;
+}
