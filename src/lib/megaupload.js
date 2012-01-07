@@ -6,7 +6,7 @@ function add_download_button()
 	var button = document.createElement('button');
 	button.id = 'send_to_sinology';
 	button.title = 'Send to Synology';
-	button.style.cssText = 'margin-left:50px;border:none;cursor:alias;float:left;height:62px;width:62px;display:block;background-image: url(https://addons.opera.com/media/extensions/65/11465/0.9.0-rev1/icons/icon_64x64.png);background-color:transparent;';
+	button.style.cssText = 'margin-left:50px;border:none;cursor:alias;float:left;height:62px;width:62px;display:block;background-image: url('+gResources.downloadButton+');background-color:transparent;';
 	button.addEventListener('click', send_to_sinology, false);
 	download_button.parentNode.insertBefore(button, download_button.nextSibling);
 }
