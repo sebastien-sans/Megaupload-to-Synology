@@ -9,4 +9,3 @@ function xh_request(method, host, uri, params)
 	GM_xmlhttpRequest(options);
 
 }
-

@@ -10,4 +10,3 @@ var IntegrationEnum = Object.freeze({
 });
 
 var integration_type = IntegrationEnum.BUTTON;
-

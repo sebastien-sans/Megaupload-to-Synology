@@ -10,4 +10,3 @@ function add_download_button()
 	button.addEventListener('click', send_to_sinology, false);
 	download_button.parentNode.insertBefore(button, download_button.nextSibling);
 }
-

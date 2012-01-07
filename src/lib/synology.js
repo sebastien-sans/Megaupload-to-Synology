@@ -6,4 +6,3 @@ function send_to_sinology()
 	var params = 'action=add_url_task&desttext=' + encodeURIComponent(destination) + '&urls=' + encodeURIComponent('["' + document.location.href + '"]');
 	var res = xh_request('POST', synology_host, uri, params);
 }
-
