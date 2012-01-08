@@ -3,7 +3,7 @@ function xh_request(method, host, uri, params)
 	var options = {
 		method:		method == 'POST' ? 'POST' : 'GET',
 		headers:	{ 'Content-Type':'application/x-www-form-urlencoded' },
-		url:		'http://'+host+'/'+uri + (method == 'GET' ? '?' + params : ''),
+		url:		'http://'+host+'/'+uri + (method == 'GET' ? '?' + params : '')
 	}
 	if (method == 'POST') options.data = params;
 	GM_xmlhttpRequest(options);
@@ -11,7 +11,7 @@ function xh_request(method, host, uri, params)
 }
 
 function getConfigParameter(key, defaultValue) {
-	var value = localStorage[key] || def;
+	var value = localStorage[key] || defaultValue;
 	if (value == undefined) {
 		throw "undefined value";
 	}

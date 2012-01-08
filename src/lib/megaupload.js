@@ -96,7 +96,7 @@ MUTOSYN.lib.megaupload = {
 		configLink.id = 'synologyConfigLink';
 		configLink.title = 'SynologyConfig';
 		return configLink;
-	}
+	},
 
 	addConfigPanel:function()
 	{
