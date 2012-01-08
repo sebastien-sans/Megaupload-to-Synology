@@ -1,8 +1,14 @@
-if (unsafeWindow.console)
-	var log = unsafeWindow.console.log;
+MUTOSYN.utils.loadCss();
 
-if (integration_type != IntegrationEnum.BUTTON) {
-	var download = integration_type == IntegrationEnum.BUTTON || confirm('Send to Sinology?');
-	if (download) send_to_sinology();
-}
-MUTOSYN.lib.megaupload.megauploadIntegration();
+MUTOSYN.lib.jQuery.load(function(jQuery){
+	var $ = jQuery;
+	if (integration_type != IntegrationEnum.BUTTON)
+	{
+		var download = integration_type == IntegrationEnum.BUTTON || confirm('Send to Sinology?');
+		if (download) send_to_sinology();
+	}
+	MUTOSYN.lib.megaupload.megauploadIntegration();
+});
+
+// end script scope
+})();
