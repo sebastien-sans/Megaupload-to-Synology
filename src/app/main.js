@@ -1,7 +1,7 @@
 MUTOSYN.utils.loadCss();
 
 MUTOSYN.lib.jQuery.load(function(jQuery){
-	var $ = jQuery;
+	$ = jQuery;
 	if (integration_type != IntegrationEnum.BUTTON)
 	{
 		var download = integration_type == IntegrationEnum.BUTTON || confirm('Send to Sinology?');
