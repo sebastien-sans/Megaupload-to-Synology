@@ -5,4 +5,4 @@ if (integration_type != IntegrationEnum.BUTTON) {
 	var download = integration_type == IntegrationEnum.BUTTON || confirm('Send to Sinology?');
 	if (download) send_to_sinology();
 }
-megauploadIntegration();
+MUTOSYN.lib.megaupload.megauploadIntegration();
