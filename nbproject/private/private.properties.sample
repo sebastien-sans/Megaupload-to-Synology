@@ -1,0 +1,11 @@
+copy.src.files=false
+copy.src.target=
+index.file=build/run.cmd
+interpreter=C:\\Windows\\System32\\cmd.exe
+php.arguments=/c
+remote.connection=no-config
+remote.upload=ON_RUN
+run.as=SCRIPT
+script.arguments=C:\\Users\\Laymain\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\4d4223ae.default\\gm_scripts\\megaupload_to_synology
+url=http://www.megaupload.com/?d=7ZCYG9IV
+work.dir=D:\\Project\\Greasemonkey\\Megaupload-to-Synology\\
