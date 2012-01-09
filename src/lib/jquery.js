@@ -3,7 +3,8 @@ MUTOSYN.lib = MUTOSYN.lib || {};
 (function(){
 
 	// class jQuery
-	MUTOSYN.lib.jQuery = {
+	MUTOSYN.lib.jQuery =
+	{
 		_init: function()
 		{
 			// Is it our jQuery or website's
@@ -26,7 +27,7 @@ MUTOSYN.lib = MUTOSYN.lib || {};
 		{
 			if (typeof unsafeWindow.jQuery == 'undefined')
 			{
-				window.setTimeout(function(){ jQueryWaitLoop(jQueryOwnage, callback); }, 100);
+				window.setTimeout(function(){ jQueryWaitLoop(owned, callback); }, 100);
 				return;
 			}
 			callback(owned ? unsafeWindow.jQuery.noConflict(true) : unsafeWindow.jQuery);
